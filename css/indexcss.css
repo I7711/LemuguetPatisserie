@@ -1,0 +1,239 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+body {
+    margin: 0 auto;
+    width: 100%;
+	max-width: 1920px;
+	height: 100vh;
+	 /*background-image-setting*/
+    background-position-x: center;
+    font-family:‘Noto Sans TC’,"微軟正黑體", "Microsoft JhengHei";
+    font-weight:400;
+    background-color: #F4F6F4;
+}
+/*******HOME PAGE*******/
+#HOME{
+    background-color: #F4F6F4;
+    width: 100%;
+    max-width: 1920px;
+    height: 100vh;
+    max-height: 1080px;
+}
+
+#home-left, #home-right{
+    height: 100vh;
+    max-height: 1080px;
+    float: left;
+    position: relative;
+    width: calc(50% - 125px);
+    max-width: 835px;
+    float: right;
+}
+
+.vertical-navigation{
+    margin-left: 30px;
+}
+
+#logo-container{
+    width: 600px;
+    height: 600px;
+    background-color: #C1CAC6;
+    position: absolute;
+    right: 0;
+    top: 150px;
+}
+#logo{
+    width:300px;
+    position: absolute;
+    bottom: 180px;
+    right: 120px;
+}
+#follow-us{
+    transform: rotate(-90deg);
+    color: #D7D0CD;
+    position: absolute;
+    left: -70px;
+    bottom:-30px;
+    letter-spacing: 2px;
+}
+#social-icon{
+    position: absolute;
+    left: -30px;
+    bottom:5px;
+    width: 30px;
+    margin-bottom: 50px;
+}
+#social-icon img{
+    margin: 15px 15px 0 0;
+}
+#home-right img{
+    width: 600px;
+    position: absolute;
+    bottom: 100px;
+}
+#home-right p{
+    text-align: right;
+    color: #728276;
+    position:absolute;
+    right: 50px;
+    bottom: 20px;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+@media screen and (max-width: 1650px) {
+    #logo-container{
+        width: 500px;
+        height: 500px;
+        top: calc(50% - 250px);
+    }
+    #home-right img{
+        width: 500px;
+        top: calc(50% - 300px);
+    }
+    #logo{
+        width:250px;
+        bottom: 100px;
+        right: 50px;
+    }
+}
+
+/*******ABOUTUS PAGE*******/
+#ABOUTUS{
+    padding-top: 200px;
+    max-width: 1670px;
+    width: calc(100%-250px);
+    height: 1080px;
+    margin-left: 250px;
+    position: relative;
+}
+
+
+#aboutus-img-container img{
+    margin: 10px;
+    z-index: 0;
+}
+#aboutus-right{
+    width: 60%;
+    max-width: 835px;
+    height: 1080px;
+    float: left;
+}
+#aboutus-left{
+    width: 40%;
+    max-width: 835px;
+    height: 1080px;
+    float: left;
+}
+.abu-top{
+    height: 540px;
+    width: 100%;
+    position: relative;
+}
+
+.abu-bottom{
+    height: 540px;
+    width: 100%;
+    position: relative;
+}
+#aboutus1{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+#aboutus2{
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+}
+
+#aboutus3{
+    position: absolute;
+    right: -285px;
+    top: 0;
+}
+#aboutus4{
+    position: absolute;
+    left: 285px;
+    top: 0;
+}
+#vertical-caption{
+    color: #C1CAC6;
+    -webkit-writing-mode: vertical-lr;
+    writing-mode: vertical-lr;
+    font-size: 20px;
+    letter-spacing: 10px;
+    position:absolute;
+    left: 500px;
+    bottom:-10px;
+}
+#ABOUTUS h1{
+    position: absolute;
+    left: 500px;
+    top: 160px;
+}
+.abu-bottom h3{
+    font-size: 14px;
+    color: #C1CAC6;
+    position: absolute;
+    left: 500px;
+    top: 230px;
+}
+
+#Founder{
+    font-family:"Playfair Display";
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #728276;
+    font-size: 30px;
+    position: absolute;
+    top: 100px;
+    right: 140px;
+}
+#Rebecca{
+    font-family:"Playfair Display";
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #728276;
+    font-size: 50px;
+    font-style: italic;
+    position: absolute;
+    top: 110px;
+    right: -40px;
+    z-index: 1;
+}
+
+h1{
+    font-family: 'Playfair Display';
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #D7D0CD;
+    font-size: 40px;
+    
+}
+@media screen and (max-width: 1650px) {
+    #aboutus2, #aboutus3{
+        width: 350px;
+    }
+    #Rebecca{
+        top: 230px;
+        font-size: 40px;
+    }
+    #Founder{
+        top: 210px;
+    }
+    #vertical-caption{
+        left: 350px;
+        height: 280px;
+        writing-mode: vertical-rl;
+    }
+    #aboutus3{
+        right: -220px;
+    }
+    #aboutus4{
+        left: 220px;
+    }
+    #ABOUTUS h1,.abu-bottom h3{
+        left: 450px;
+    }
+}
+

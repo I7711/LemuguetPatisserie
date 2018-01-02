@@ -1,0 +1,142 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+body {
+    margin: 0 auto;
+    width: 100%;
+	max-width: 1920px;
+	height: 100vh;
+	 /*background-image-setting*/
+    background-position-x: center;
+    font-family:‘Noto Sans TC’,"微軟正黑體", "Microsoft JhengHei";
+    font-weight:400;
+    background-color: #F4F6F4;
+}
+
+#vertical-menu{
+    top: 0;
+    height: 100vh;
+    width:250px;
+    background-color:#334A41;
+    float: left;
+    text-align: center;
+    position: relative;
+    position: fixed;
+}
+
+#vertical-menu img{
+    width: 50px;
+    margin: 50px 50px;   
+}
+#logo-line-l{
+    width: 40px;
+    height: 1.4px;
+    background-color: #D7D0CD;
+    position: absolute; 
+    top: 85px;
+}
+#logo-line-r{
+    width: 40px;
+    height: 1.4px;
+    background-color: #D7D0CD;
+    position: absolute; 
+    top: 85px;
+    right: 0;
+}
+
+header{
+    font-family:"Playfair Display";
+    text-transform: uppercase;
+    color: #D7D0CD;
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+}
+#patisserie-line{
+    width: 40px;
+    height: 1px;
+    background-color: #D7D0CD;
+    margin: auto;
+}
+ul{
+    padding-top: 20px;
+    padding-left: 0;
+    list-style: none;
+    line-height: 30px;
+    letter-spacing: 3px;
+    margin-top: 50px;
+    color: #C1CAC6;
+    font-size: 15px;
+    list-style: none; 
+    text-align: center;
+}
+
+li { 
+  position: relative; 
+  padding: 10px 0;
+}
+.thispage{
+    color: #F4F6F4;
+}
+
+#menu a {
+  color: #C1CAC6;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+#menu a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1.3px;
+  left: 50%;
+  position: absolute;
+  background: #D7D0CD;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+#menu a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+#vertical-menu{
+    float: left;
+}
+#item-container{
+    height: 100vh;
+    width: calc(100% - 250px);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+    float: right;
+    padding:60px calc(50% - 805px);
+}
+#item-container figure{
+    -webkit-margin-before: 30px;
+    -webkit-margin-after: 30px;
+    -webkit-margin-start: 30px;
+    -webkit-margin-end: 30px;
+}
+
+#about{
+    width: calc(100% - 250px);
+    padding-top: 80px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+    float: right;
+    text-align: center;
+}
+#about p{
+    letter-spacing: 5px;
+    line-height: 35px;
+    color: #B0A9A6;
+    font-size: 14px;
+}
+@media screen and (max-width: 1680px) {
+    #item-container{
+        padding:60px calc(50% - 635px);
+    }
+}
